@@ -20,7 +20,7 @@ def get_client() -> genai.Client:
         
     # Fallback: Check Streamlit secrets, which is necessary for Streamlit Cloud
     elif "GEMINI_API_KEY" in st.secrets:
-        api_key = st.secrets["AIzaSyANZ9NlK6g4bvbHc9B-Z3Brye-1J3ozLts"]
+        api_key = st.secrets[""]
         st.success("API Key loaded from Streamlit secrets.")
     
     # Final check and error handling
